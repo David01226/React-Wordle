@@ -1,0 +1,40 @@
+{
+  "solutions": [
+    {"id": 1, "word": "drive"},
+    {"id": 2, "word": "relax"},
+    {"id": 3, "word": "times"},
+    {"id": 4, "word": "train"},
+    {"id": 5, "word": "cores"},
+    {"id": 6, "word": "blame"},
+    {"id": 7, "word": "phone"},
+    {"id": 8, "word": "bling"}
+  ],
+  "letters": [
+    {"key": "a"},
+    {"key": "b"},
+    {"key": "c"},
+    {"key": "d"},
+    {"key": "e"},
+    {"key": "f"},
+    {"key": "g"},
+    {"key": "h"},
+    {"key": "i"},
+    {"key": "j"},
+    {"key": "k"},
+    {"key": "l"},
+    {"key": "m"},
+    {"key": "n"},
+    {"key": "o"},
+    {"key": "p"},
+    {"key": "q"},
+    {"key": "r"},
+    {"key": "s"},
+    {"key": "t"},
+    {"key": "u"},
+    {"key": "v"},
+    {"key": "w"},
+    {"key": "x"},
+    {"key": "y"},
+    {"key": "z"}
+  ]
+}
