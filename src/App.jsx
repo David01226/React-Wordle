@@ -1,14 +1,13 @@
 import { useEffect, useState } from 'react'
 import './App.css'
 import Wordle from "./components/Wordle"
-import Grid from "./components/Grid"
 
 
 function App() {
   const [solution, setSolution] = useState(null)
 
   useEffect(() => {
-    fetch('http://localhost:3001/solutions')
+    fetch('http://localhost:3000/solutions')
       .then(res => res.json())
       .then(json => {
         console.log(json)
