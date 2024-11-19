@@ -10,7 +10,6 @@ function App() {
     fetch(`${import.meta.env.VITE_APP_API_URL}/solutions`)
       .then(res => res.json())
       .then(json => {
-        console.log(json)
         const randomSolution = json[Math.floor(Math.random()*json.length)]
         setSolution(randomSolution.word)
       })
