@@ -6,7 +6,7 @@ import Modal from "./Modal"
 
 export default function Wordle({ solution }) {
 
-  const { currentGuess, handleKeyUp, guesses, isCorrect, turn, usedKeys } = UseWordle(solution)
+  const { currentGuess, handleKeyUp, guesses, isCorrect, turn, usedKeys, handleClick } = UseWordle(solution)
   const [showModal, setShowModal] = useState(false)
 
   useEffect(() => {
@@ -26,9 +26,9 @@ export default function Wordle({ solution }) {
   }, [handleKeyUp, isCorrect, turn])
 
   return (
-    <div>
+    <div className="wordle-wrapper">
       <Grid currentGuess={currentGuess} guesses={guesses} turn={turn}/>
-      <Keypad usedKeys={usedKeys}/>
+      <Keypad usedKeys={usedKeys} isCorrect={isCorrect} turn={turn} handleClick={handleClick} setShowModal={setShowModal}/>
       {showModal && <Modal isCorrect={isCorrect} turn={turn} solution={solution}/>}
     </div>
   )

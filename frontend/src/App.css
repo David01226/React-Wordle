@@ -6,6 +6,10 @@ div#root {
   justify-content: flex-start;
 }
 
+.wordle-wrapper {
+  margin-bottom: 30px;
+}
+
 .row {
   text-align: center;
   display: flex;
@@ -13,7 +17,9 @@ div#root {
 }
 
 .row > div {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 60px;
   height: 60px;
   border: 1px solid #bbb;
@@ -64,17 +70,18 @@ div#root {
 }
 
 .keypad {
-  max-width: 500px;
-  margin: 20px auto;
+  max-width: 520px;
+  margin: 20px auto 0;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
 
-.keypad > div {
+.key {
   margin: 5px;
-  width: 40px;
+  padding: 0 15px;
+  min-width: 40px;
   height: 50px;
   background: #eee;
   display: flex;
@@ -84,22 +91,28 @@ div#root {
   line-height: 50px;
 }
 
-.keypad > div.green {
+.keypad > .key.green {
   background: #5ac85a;
   color: #fff;
   transition: all 0.3s ease-in;
 }
 
-.keypad > div.yellow {
+.keypad > .key.yellow {
   background: #e2cc68;
   color: #fff;
   transition: all 0.3s ease-in;
 }
 
-.keypad > div.grey {
+.keypad > .key.grey {
   background: #a1a1a1;
   color: #fff;
   transition: all 0.3s ease-in;
+}
+
+@media (max-width: 767px) {
+  .key {
+    padding: 0 20px;
+  }
 }
 
 .modal {
